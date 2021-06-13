@@ -29,6 +29,7 @@ public class ComsumerController {
     public List<ServiceInstance> getInstances() {
         List<ServiceInstance> list = discoveryClient.getInstances("provider");
         HashMap map = new HashMap();
+
         return list;
     }
 
