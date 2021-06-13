@@ -1,0 +1,13 @@
+server:
+  port: 8083
+provider:
+  ribbon:
+    #负载均衡随机算法
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    #权重算法
+    NFLoadBalancerRuleClassName : com.tony.configration.NacosWeightedRule
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 1.117.27.106:8848

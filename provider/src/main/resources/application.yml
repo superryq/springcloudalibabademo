@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 1.117.27.106:8848
+    sentinel:
+      transport:
+        dashboard: 1.117.27.106:18080
+      filter:
+        enabled: false
+  application:
+    name: provider
+server:
+  port: 8082
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
